@@ -1,14 +1,161 @@
-<div class="jumbotron center">
-	<h1>Recycling? Check!</h1>
-	<% if user_signed_in? %>
-    # do something
-  <% else %>	
-					<p>
-            <%= link_to "Log In", new_user_session_path, class: "btn btn-default btn-lg" %>
-            <%= link_to "Sign Up Now", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-          </p>
-  <% end %>
-			
+<style>
+
+body{
+  background-color:white;
+}
+
+  .col-xs-12{
+    background-color: blue;
+    border: 2px solid black;
+    color: white;
+    height: 100px;
+  }
+
+  .col-xs-6{
+    background-color: yellow;
+    border: 2px solid black;
+    color: black;
+  }
+
+  .col-xs-4{
+    background-color: red;
+    border: 2px solid black;
+    color: white;
+    height: 100px;
+  }
+
+  .col-xs-8{
+    background-color: green;
+    border: 2px solid black;
+    color: white;
+    height: 100px;
+  }
+
+   .col-xs-5{
+    background-image: url(<%= asset_path 'blue-background.jpg' %>);
+    background-size: cover 100% 100%;
+    color: white;
+    height: 200px;
+    text-align: center;
+  }
+
+  .col-xs-7{
+    background-color: white;
+    border: 1px solid #C1CDCD;
+    color: black;
+    height: 200px;
+  }
+
+    .footer .col-sm-4{
+    background-color: purple;
+    border: 2px solid black;
+    color: white;
+    height: 100px;
+  }
+
+</style>
+
+
+<!-- Ordering Classes:
+        .col-##-push-##: pushes columns
+        .col-##-pull-##: pulls columns
+
+      Responsive Utility Classes: they hide and show content on your screen depending on which device you style for.
+
+        .visible-##: your content will only be visible on that screen size
+        .hidden-##: your content will only be hidden on that screen size
+      -->
+
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-xs-5">
+
+      <h1 class="visible-lg">Sign Up for RoadRunner Today!</h1>
+      <h3 class="visible-md">Sign Up for RoadRunner Today!</h3>
+      <h4 class="visible-sm">Sign Up for RoadRunner Today!</h4>
+      <h5 class="visible-xs">Sign Up for RoadRunner Today!</h5>
+
+
+    </div>
+
+    <div class="col-xs-7">
+      Lorem ipsum itinun lael latin
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-xs-12">
+
+      <h1 class="visible-xs">Extra Small Screens</h1>
+      <h1 class="visible-sm">Small Screens</h1>
+      <h1 class="visible-md">Medium Screens</h1>
+      <h1 class="visible-lg">Large Screens</h1>
+
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-sm-6">
+
+        <div class="row">
+
+          <div class="col-xs-4">
+            col-xs-4
+          </div>
+          <div class="col-xs-8">     
+            col-xs-8
+          </div>
+
+        </div>    
+    </div>
+
+    <div class="col-sm-6">
+
+        <div class="row">
+
+          <div class="col-xs-4 col-md-push-8">
+            col-xs-4
+          </div>
+          <div class="col-xs-8 col-md-pull-4">     
+            col-xs-8
+          </div>
+
+        </div>    
+    </div>
+
+  </div>
+
+
+<div class="row footer">
+
+  <div class="col-sm-4">
+    col-sm-4
+  </div>
+
+  <div class="col-sm-4">
+    col-sm-4
+  </div>
+
+  <div class="col-sm-4">
+    col-sm-4
+  </div>
+
+
 </div>
 
+<div class="row">
 
+  <div class="col-md-4 col-md-offset-4 panel">
+    This div is offset 4
+  </div>
+
+</div>
+
+</div>
