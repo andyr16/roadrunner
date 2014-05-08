@@ -20,16 +20,17 @@ body{
 
   .col-xs-4{
     background-color: red;
-    border: 2px solid black;
+    border: 1px solid black;
     color: white;
-    height: 100px;
+    height: 200px;
   }
 
   .col-xs-8{
-    background-color: green;
-    border: 2px solid black;
+    background-image: url(<%= asset_path 'rec-bins.jpg' %>);
+    background-size: 100% 100%;
+    border: 1px solid black;
     color: white;
-    height: 100px;
+    height: 200px;
   }
 
    .col-xs-7{
@@ -41,9 +42,10 @@ body{
   }
 
   .col-xs-5{
-    background-color: white;
-    border: 1px solid #C1CDCD;
-    color: black;
+     background-image: url(<%= asset_path 'rec-bins.jpg' %>);
+    background-size: 100% 100%;
+    border: 1px solid black;
+    color: white;
     height: 200px;
   }
 
@@ -89,11 +91,15 @@ body{
       <% if user_signed_in? %>
         # do something
       <% else %>
-       <p class="visible-xs visible-sm"style="text-align:center;margin-top:45px;">
-         <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %><br><br>
-         <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+       <p class="visible-xs"style="text-align:center;margin-top:20px;">
+         <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-sm" %>
+         <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-sm" %>
        </p>
-       <p class="visible-lg visible-md"style="text-align:center;margin-top:80px;">
+       <p class="visible-sm"style="text-align:center;margin-top:30px;">
+         <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-md" %>
+         <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-sm" %>
+       </p>
+       <p class="visible-lg visible-md"style="text-align:center;margin-top:50px;">
          <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
          <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
        </p>
