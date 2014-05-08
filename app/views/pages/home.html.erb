@@ -81,7 +81,7 @@ body{
 
       <p class="visible-lg visible-md visible" style="text-align:left;color:#C1CDCD;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean leo lectus, tempus non blandit sit amet, dictum et metus. Pellentesque sit amet nisl adipiscing, elementum metus et, gravida urna. Aenean nisi elit, cursus eu venenatis et, feugiat eget tellus.</p>
 
-      <p class="visible-xs visible-sm" style="font-size:.75em;text-align:left;color=#C1CDCD;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean leo lectus, tempus non blandit sit amet, dictum et metus./p>
+      <p class="visible-xs visible-sm" style="font-size:.75em;text-align:left;color=#C1CDCD;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean leo lectus, tePellentesque sit amet nisl adipiscing. Adipiscing, elementum metus et, tempus non blandit sit amet.<mpus non blandit sit amet, dictum et metus. /p>
 
     </div>
 
@@ -89,8 +89,12 @@ body{
       <% if user_signed_in? %>
         # do something
       <% else %>
-       <p style="text-align:center;margin-top:45px;">
+       <p class="visible-xs visible-sm"style="text-align:center;margin-top:45px;">
          <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %><br><br>
+         <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+       </p>
+       <p class="visible-lg visible-md"style="text-align:center;margin-top:80px;">
+         <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
          <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
        </p>
       <% end %>  
