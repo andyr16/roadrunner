@@ -7,7 +7,6 @@ body{
   .col-xs-12{
     background-color: white;
     border: 1px solid #C1CDCD;
-    border-top: hidden;
     color: black;
     height: 100px;
   }
@@ -50,6 +49,11 @@ body{
     border: 2px solid black;
     color: white;
     height: 100px;
+  }
+
+  .quicklinks {
+
+    margin-top: 10px;
   }
 
 </style>
@@ -104,12 +108,6 @@ body{
        </p>
       <% end %>  
       
-      <div style="position: relative;" class="quicklinks">
-        <p><span style="color:#FFC443;"class="glyphicon glyphicon-circle-arrow-right"></span> Visit the RR Learning Center</p>
-        <p><span class="glyphicon glyphicon-circle-arrow-right"></span> Make an appointment</p>
-        <p><span class="glyphicon glyphicon-circle-arrow-right"></span> Learn more about RR services</p>
-      </div>
-
     </div>
 
   </div>
@@ -118,10 +116,17 @@ body{
 
     <div class="col-xs-12">
 
-      <h3 class="visible-xs">Extra Small Screens</h3>
+      <div class="quicklinks">
+        <p><span style="color:#FFC443;"class="glyphicon glyphicon-circle-arrow-right"></span> Visit the RR Learning Center</p>
+        <p><span class="glyphicon glyphicon-circle-arrow-right"></span> Make an appointment</p>
+        <p><span class="glyphicon glyphicon-circle-arrow-right"></span> Learn more about RR services</p>
+      </div>
+
+     <!-- <h3 class="visible-xs">Extra Small Screens</h3>
       <h2 class="visible-sm">Small Screens</h2>
       <h2 class="visible-md">Medium Screens</h2>
       <h1 class="visible-lg">Large Screens</h1>
+    -->
 
     </div>
 
