@@ -21,13 +21,14 @@ body{
     background-image: url(<%= asset_path 'online-recycling-computer.jpg' %>);
     background-size: 100% 100%;
     color: white;
-    height: 135px;
+    height: 125px;
+    overflow: hidden;
   }
 
   .col-xs-8{
     background-color: white;
     color: black;
-    height: 135px;
+    height: 125px;
   }
 
    .col-xs-7{
@@ -74,7 +75,7 @@ body{
 
   <div class="row">
 
-    <div class="col-xs-7">
+    <div style="margin-left:-15px;"class="col-xs-7">
 
       <h1 class="visible-lg">Meet RoadRunner</h1>
       <h1 class="visible-md">Meet RoadRunner</h1>
@@ -89,22 +90,26 @@ body{
 
     <div class="col-xs-5">
 
-      <% if user_signed_in? %>
-        # do something
-      <% else %>
-       <p class="visible-xs"style="text-align:center;margin-top:10px;">
-         <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-sm" %>
-         <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-sm" %>
-       </p>
-       <p class="visible-sm"style="text-align:center;margin-top:30px;">
-         <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-md" %>
-         <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-sm" %>
-       </p>
-       <p class="visible-lg visible-md"style="text-align:center;margin-top:20px;">
-         <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
-         <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-       </p>
-      <% end %>  
+      <div style="margin-top:50px;"></div>
+
+        <% if user_signed_in? %>
+          # do something
+        <% else %>
+         <p class="visible-xs"style="text-align:center;">
+           <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-sm" %><br><br>
+           <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-sm" %>
+         </p>
+         <p class="visible-sm"style="text-align:center;">
+           <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-md" %><br><br>
+           <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-sm" %>
+         </p>
+         <p class="visible-lg visible-md"style="text-align:center;">
+           <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %><br><br>
+           <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+         </p>
+        <% end %>
+
+      </div>
       
     </div>
 
@@ -112,7 +117,7 @@ body{
 
   <div class="row">
 
-    <div class="col-xs-12">
+    <div style="margin: 0,15,0,15;"class="col-xs-12">
 
       <div class="quicklinks">
         <p><span style="color:#FFC443;"class="glyphicon glyphicon-circle-arrow-right"></span> Visit the RR Learning Center</p>
@@ -130,14 +135,14 @@ body{
 
   </div>
 
-  <div class="row">
+  <div style="margin-left:15px;margin-right:15px;"class="row">
 
     <div class="col-sm-6">
 
         <div class="row">
 
           <div class="col-xs-4">
-            
+            <p>test</p>
           </div>
 
           <div style="margin-top:10px;" class="col-xs-8 visible-lg visible-md">  
@@ -156,14 +161,13 @@ body{
         <div class="row">
 
           <div style="margin-bottom:10px;" class="col-xs-4 col-md-push-8">
-          <p>test</p>
+          
+          </div>
+          <div style="margin-top:9px;" class="col-xs-8 col-md-pull-4 visible-md visible-lg">     
+              <p>Suspendisse iaculis sagittis lorem quis tincidunt. Integer et nibh eros. Mauris non neque ac mi euismod hendrerit.</p>
           </div>
 
-          <div style="margin-top:10px;" class="col-xs-8 col-md-pull-4 visible-md visible-lg">     
-              <p>Suspendisse iaculis sagittis lorem quis tincidunt. Integer et nibh eros. Mauris non neque ac mi euismod hendrerit. Sed eget lobortis mi.</p>
-          </div>
-
-          <div style="margin-top:20px;" class="col-xs-8 col-md-pull-4 visible-xs visible-sm">     
+          <div style="margin-top:9px;" class="col-xs-8 col-md-pull-4 visible-xs visible-sm">     
             <p>Suspendisse iaculis sagittis lorem quis tincidunt. Integer et nibh eros. Mauris non neque ac mi euismod hendrerit.</p>
           </div>
 
