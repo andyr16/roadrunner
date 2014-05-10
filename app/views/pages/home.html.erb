@@ -22,7 +22,7 @@ body{
     background-size: 100% 100%;
     color: white;
     height: 125px;
-    overflow: hidden;
+
   }
 
   .col-xs-8{
@@ -90,34 +90,45 @@ body{
 
     <div class="col-xs-5">
 
-      <div style="margin-top:50px;"></div>
-
         <% if user_signed_in? %>
           # do something
         <% else %>
-         <p class="visible-xs"style="text-align:center;">
-           <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-sm" %><br><br>
-           <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-sm" %>
-         </p>
-         <p class="visible-sm"style="text-align:center;">
-           <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-md" %><br><br>
-           <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-sm" %>
-         </p>
-         <p class="visible-lg visible-md"style="text-align:center;">
-           <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %><br><br>
-           <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-         </p>
-        <% end %>
 
-      </div>
-      
+           <p class="visible-xs"style="text-align:center;padding-top:40px;">
+            Already a member?<br>
+
+             <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-sm" %><br>
+            New to the site?<br>
+
+             <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-sm" %>
+           </p>
+
+           <p class="visible-sm"style="text-align:center;padding-top:50px;">
+            <br>
+
+             <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-md" %><br>
+
+             <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-sm" %>
+
+           </p>
+
+           <p class="visible-lg visible-md"style="text-align:center;padding-top:50px;">
+
+             <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %><br><br>
+
+             <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+
+           </p>
+
+          <% end %>
+        
     </div>
 
   </div>
 
   <div class="row">
 
-    <div style="margin: 0,15,0,15;"class="col-xs-12">
+    <div class="col-xs-12">
 
       <div class="quicklinks">
         <p><span style="color:#FFC443;"class="glyphicon glyphicon-circle-arrow-right"></span> Visit the RR Learning Center</p>
@@ -135,7 +146,7 @@ body{
 
   </div>
 
-  <div style="margin-left:15px;margin-right:15px;"class="row">
+  <div class="row">
 
     <div class="col-sm-6">
 
