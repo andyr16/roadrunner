@@ -28,16 +28,14 @@ body{
     background-image: url(<%= asset_path 'blue-background.jpg' %>);
     background-size: cover 100% 100%;
     color: white;
-    height: 150px;
+    height: 145px;
     text-align: left;
-    margin-top:10px;
   }
 
   .col-xs-5{
     background-color: white;
     color: black;
-    height: 150px;
-    margin-top:10px;
+    height: 145px;
   }
 
     .footer .col-sm-4{
@@ -62,30 +60,36 @@ body{
     }
 
     #homeheroxs {
-    height: 300px;
-    background-image: url(<%= asset_path 'ny-city-hero.jpg' %>);
-    background-size: 100% 100%;
-    color: white;
-    text-align:center;
+        height: 300px;
+        background-image: url(<%= asset_path 'ny-city-hero.jpg' %>);
+        background-size: 100% 100%;
+        color: white;
+        text-align:center;
     }
 
     #homeheromdlg {
-    height: 600px;
-    background-image: url(<%= asset_path 'ny-city-hero.jpg' %>);
-    background-size: 100% 100%;
-    color: white;
-    text-align: center;
-    font-size: 300%;
-    padding-top:75px;
+        height: 600px;
+        background-image: url(<%= asset_path 'ny-city-hero.jpg' %>);
+        background-size: 100% 100%;
+        color: white;
+        text-align: center;
+        font-size: 300%;
+        padding-top:75px;
     }
 
      #homeherosm {
-    height: 375px;
-    background-image: url(<%= asset_path 'ny-city-hero.jpg' %>);
-    background-size: 100% 100%;
-    color: white;
-    text-align: center;
-    padding-top:50px;
+        height: 375px;
+        background-image: url(<%= asset_path 'ny-city-hero.jpg' %>);
+        background-size: 100% 100%;
+        color: white;
+        text-align: center;
+        padding-top:50px;
+    }
+
+    #quicklinks {
+        border: 2px solid #A3A3A3;
+        margin-top:5px;
+
     }
 
 
@@ -123,6 +127,8 @@ body{
           <% else %>
 
           <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %><br><br>
+
+          <%= link_to "Learn More", "#", class: "btn btn-default btn-lg" %>
 
           <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %><br>
           <% end %>
@@ -181,7 +187,7 @@ body{
 
   <div class="row">
 
-    <div class="col-xs-7">
+    <div id="quicklinks" class="col-xs-7">
 
      <!-- <h1 class="visible-lg">Meet RoadRunner</h1>
       <h1 class="visible-md">Meet RoadRunner</h1>
@@ -190,7 +196,7 @@ body{
 
     -->
 
-      <div style="margin-top:15px;"class="quicklinks">
+      <div style="padding-top:10px;"class="quicklinks">
         <p><span style="color:#FFC443;"class="glyphicon glyphicon-circle-arrow-right"></span>  Get Informed at the RoadRunner Learning Center</p>
         <p><span style="color:#DD440D;" class="glyphicon glyphicon-circle-arrow-right"></span>  Speak to a Specialist</p>
         <p><span style="color:#489141;" class="glyphicon glyphicon-circle-arrow-right"></span>  View RR Services</p>
