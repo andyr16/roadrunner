@@ -47,13 +47,13 @@ body{
 
     .col-xs-12 {
     height: 250px;
-    background-image: url(<%= asset_path 'ny-city-sm-xs.jpg' %>);
-    background-size: 100% 100%;
+    background-image: url(<%= asset_path 'ny-city-hero.jpg' %>);
+    background-size: cover;
     color: white;
     text-align:center;
     }
   
-  .col-lg-12 {
+  .col-md-12 {
     height: 500px;
     background-image: url(<%= asset_path 'ny-city-hero.jpg' %>);
     background-size: 100% 100%;
@@ -61,6 +61,10 @@ body{
     text-align: center;
     font-size: 300%;
     }
+
+  .col-sm-12 }
+
+
 
     .nopadding {
    padding: 0 !important;
@@ -88,7 +92,7 @@ body{
 
    <div class="row">
 
-    <div class="col-xs-12 nopadding">
+    <div class="col-xs-12 visible-xs visible-sm">
 
       <h1 style="font-size:x-large;">Revolutionizing Recycling</h1>
       <h3 style="font-size:large;">One Building at a Time</h3><br>
@@ -116,9 +120,37 @@ body{
 
     </div>
 
+    <div class="col-md-12 visible-lg visible-md">
+
+      <h1>Revolutionizing Recycling</h1>
+      <h3>One Building at a Time</h3><br>
+
+        <div class="loginstuff">
+
+          <% if user_signed_in? %>
+
+            # do something
+
+          <% else %>
+
+          <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %><br><br>
+
+          <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %><br>
+          <% end %>
+
+        </div>
+
+     <!-- <h3 class="visible-xs">Extra Small Screens</h3>
+      <h2 class="visible-sm">Small Screens</h2>
+      <h2 class="visible-md">Medium Screens</h2>
+      <h1 class="visible-lg">Large Screens</h1>
+    -->
+
+    </div>
+
   </div>
 
-  <div class="row">
+  <div style="margin-top:10px;"class="row">
 
     <div class="col-xs-7">
 
@@ -149,17 +181,10 @@ body{
 
     <div class="col-xs-12">
 
-      <div class="quicklinks">
-        <p><span style="color:#FFC443;"class="glyphicon glyphicon-circle-arrow-right"></span> Visit the RR Learning Center</p>
-        <p><span class="glyphicon glyphicon-circle-arrow-right"></span> Make an appointment</p>
-        <p><span class="glyphicon glyphicon-circle-arrow-right"></span> Learn more about RR services</p>
-      </div>
-
-     <!-- <h3 class="visible-xs">Extra Small Screens</h3>
+      <h3 class="visible-xs">Extra Small Screens</h3>
       <h2 class="visible-sm">Small Screens</h2>
       <h2 class="visible-md">Medium Screens</h2>
       <h1 class="visible-lg">Large Screens</h1>
-    -->
 
     </div>
 
