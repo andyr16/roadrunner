@@ -4,13 +4,6 @@ body{
   background-color:white;
 }
 
-  .col-xs-12{
-    background-color: white;
-    border: 1px solid #C1CDCD;
-    color: black;
-    height: 100px;
-  }
-
   .col-xs-6{
     background-color: yellow;
     border: 2px solid black;
@@ -52,9 +45,29 @@ body{
     height: 100px;
   }
 
+    .col-xs-12 {
+    height: 250px;
+    background-image: url(<%= asset_path 'ny-city-sm-xs.jpg' %>);
+    background-size: 100% 100%;
+    color: white;
+    text-align: center;
+    font-size: .6em;
+    }
+
   .quicklinks {
 
     margin-top: 8px;
+  }
+  
+  .col-lg-12 {
+    height: 500px;
+    background-image: url(<%= asset_path 'ny-city-hero.jpg' %>);
+    background-size: 100% 100%;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    }
+
   }
 
 </style>
@@ -70,8 +83,24 @@ body{
         .hidden-##: your content will only be hidden on that screen size
       -->
 
-
 <div class="container">
+
+  <div class="row visible">
+
+    <div class="col-xs-12 visible-sm visible-xs">
+      <h1>Are you ready to revolutionize recycling?<h1>
+    </div>
+
+    <div class="col-lg-12 visible-lg">
+      <h1>We are revolutionizing recycling. Join Us.</h1>
+    </div>
+
+  </div>
+
+   <div class="row">
+    div.col-xs-12
+
+
 
   <div class="row">
 
