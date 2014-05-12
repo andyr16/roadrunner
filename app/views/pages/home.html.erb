@@ -4,6 +4,15 @@ body{
   background-color:white;
 }
 
+.btn-xlarge {
+    padding: 18px 28px;
+    font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    }
+
   .col-xs-6{
     background-color: yellow;
     border: 2px solid black;
@@ -98,6 +107,7 @@ body{
     }
 
 
+
 </style>
 
 
@@ -179,11 +189,11 @@ body{
 
           <% else %>
 
-          <%= link_to "Log in", new_user_session_path, class: "btn btn-primary btn-lg" %><br>
+          <%= link_to "Log in", new_user_session_path, class: "btn btn-primary btn-xlarge" %><br>
 
-          <%= link_to "Learn More", "#", class: "btn btn-primary btn-lg" %>
+          <%= link_to "Learn More", "#", class: "btn btn-primary btn-xlarge" %>
 
-          <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %><br>
+          <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-xlarge" %><br>
           <% end %>
 
         </div>
