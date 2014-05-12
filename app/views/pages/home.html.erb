@@ -30,13 +30,14 @@ body{
     color: white;
     height: 150px;
     text-align: left;
+    margin-top:10px;
   }
 
   .col-xs-5{
     background-color: white;
     color: black;
     height: 150px;
-    padding-top:0px;
+    margin-top:10px;
   }
 
     .footer .col-sm-4{
@@ -48,19 +49,43 @@ body{
 
     .col-xs-12 {
     height: 250px;
-    background-image: url(<%= asset_path 'ny-city-hero.jpg' %>);
-    background-size: 100% 100%;
+    background-color:white;
     color: white;
     text-align:center;
     }
   
   .col-md-12 {
-    height: 550px;
+    heigh:150px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    }
+
+    #homeheroxs {
+    height: 300px;
+    background-image: url(<%= asset_path 'ny-city-hero.jpg' %>);
+    background-size: 100% 100%;
+    color: white;
+    text-align:center;
+    }
+
+    #homeheromdlg {
+    height: 600px;
     background-image: url(<%= asset_path 'ny-city-hero.jpg' %>);
     background-size: 100% 100%;
     color: white;
     text-align: center;
     font-size: 300%;
+    padding-top:75px;
+    }
+
+     #homeherosm {
+    height: 375px;
+    background-image: url(<%= asset_path 'ny-city-hero.jpg' %>);
+    background-size: 100% 100%;
+    color: white;
+    text-align: center;
+    padding-top:50px;
     }
 
 
@@ -84,7 +109,7 @@ body{
     -->
   <div class="row">
 
-    <div class="col-xs-12 visible-xs visible-sm">
+    <div id="homeheroxs" class="col-xs-12 visible-xs">
 
       <h1 style="font-size:x-large;">Revolutionizing Recycling</h1>
       <h3 style="font-size:large;">One Building at a Time</h3><br>
@@ -104,18 +129,34 @@ body{
 
         </div>
 
-     <!-- <h3 class="visible-xs">Extra Small Screens</h3>
-      <h2 class="visible-sm">Small Screens</h2>
-      <h2 class="visible-md">Medium Screens</h2>
-      <h1 class="visible-lg">Large Screens</h1>
-    -->
+    </div>
+
+    <div id="homeherosm" class="col-xs-12 visible-sm">
+
+      <h1 style="font-size:x-large;">Revolutionizing Recycling</h1>
+      <h3 style="font-size:large;">One Building at a Time</h3><br>
+
+        <div class="loginstuff">
+
+          <% if user_signed_in? %>
+
+            # do something
+
+          <% else %>
+
+          <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %><br><br>
+
+          <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %><br>
+          <% end %>
+
+        </div>
 
     </div>
 
-    <div style="padding-top:55px;width:100%;"class="col-md-12 visible-lg visible-md">
+    <div id="homeheromdlg" class="col-md-12 visible-lg visible-md">
 
-      <h1>Revolutionizing Recycling</h1>
-      <h3>One Building at a Time</h3><br>
+      <h1 style="font-size:2em">Revolutionizing Recycling</h1>
+      <h3 style="font-size:1.2em">One Building at a Time</h3><br>
 
         <div class="loginstuff">
 
@@ -133,6 +174,8 @@ body{
         </div>
 
     </div> <!-- ends col-md-12 class -->
+
+
 
   </div> <!-- ends row class -->
 
@@ -156,10 +199,11 @@ body{
     </div>
 
 
-    <div class="col-xs-5 visible-md visible-lg">
-      <h3 style="margin-top:5px;">Did you know?</h3>
-      <p>Waste management companies make $350 million a year selling back waste and recycling refuge from commercial businesses. And they only give back $1.7 million to those same customers...</p> 
-
+    <div class="col-sm-5">
+      <h3 class="visible-xs">Extra Small Screens</h3>
+      <h2 class="visible-sm">Small Screens</h2>
+      <h2 class="visible-md">Medium Screens</h2>
+      <h1 class="visible-lg">Large Screens</h1>
     </div>
 
 
