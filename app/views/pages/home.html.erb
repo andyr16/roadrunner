@@ -28,14 +28,15 @@ body{
     background-image: url(<%= asset_path 'blue-background.jpg' %>);
     background-size: cover 100% 100%;
     color: white;
-    height: 145px;
+    height: 150px;
     text-align: left;
   }
 
   .col-xs-5{
     background-color: white;
     color: black;
-    height: 145px;
+    height: 150px;
+    padding-top:0px;
   }
 
     .footer .col-sm-4{
@@ -48,13 +49,13 @@ body{
     .col-xs-12 {
     height: 250px;
     background-image: url(<%= asset_path 'ny-city-hero.jpg' %>);
-    background-size: cover;
+    background-size: 100% 100%;
     color: white;
     text-align:center;
     }
   
   .col-md-12 {
-    height: 500px;
+    height: 550px;
     background-image: url(<%= asset_path 'ny-city-hero.jpg' %>);
     background-size: 100% 100%;
     color: white;
@@ -62,12 +63,6 @@ body{
     font-size: 300%;
     }
 
-  .col-sm-12 }
-
-  .nopadding {
-   padding: 0 !important;
-   margin: 0 !important;
-}
 
 </style>
 
@@ -87,8 +82,8 @@ body{
       <h2 class="visible-md">Medium Screens</h2>
       <h1 class="visible-lg">Large Screens</h1>
     -->
-
-   <div class="row">
+<div class="container">
+  <div class="row">
 
     <div class="col-xs-12 visible-xs visible-sm">
 
@@ -118,7 +113,7 @@ body{
 
     </div>
 
-    <div style="padding-top:55px;"class="col-md-12 visible-lg visible-md">
+    <div style="padding-top:55px;width:100%;"class="col-md-12 visible-lg visible-md">
 
       <h1>Revolutionizing Recycling</h1>
       <h3>One Building at a Time</h3><br>
@@ -138,17 +133,11 @@ body{
 
         </div>
 
-     <!-- <h3 class="visible-xs">Extra Small Screens</h3>
-      <h2 class="visible-sm">Small Screens</h2>
-      <h2 class="visible-md">Medium Screens</h2>
-      <h1 class="visible-lg">Large Screens</h1>
-    -->
+    </div> <!-- ends col-md-12 class -->
 
-    </div>
+  </div> <!-- ends row class -->
 
-  </div>
-
-  <div style="margin-top:10px;"class="row">
+  <div class="row">
 
     <div class="col-xs-7">
 
@@ -160,102 +149,104 @@ body{
     -->
 
       <div style="margin-top:15px;"class="quicklinks">
-        <p><span style="color:#FFC443;"class="glyphicon glyphicon-circle-arrow-right"></span> Get Informed at the RoadRunner Learning Center</p>
-        <p><span style="color:#DD440D;" class="glyphicon glyphicon-circle-arrow-right"></span> Speak to a Specialist</p>
-        <p><span style="color:#489141;" class="glyphicon glyphicon-circle-arrow-right"></span> View RR Services</p>
+        <p><span style="color:#FFC443;"class="glyphicon glyphicon-circle-arrow-right"></span>  Get Informed at the RoadRunner Learning Center</p>
+        <p><span style="color:#DD440D;" class="glyphicon glyphicon-circle-arrow-right"></span>  Speak to a Specialist</p>
+        <p><span style="color:#489141;" class="glyphicon glyphicon-circle-arrow-right"></span>  View RR Services</p>
       </div>
 
     </div>
 
-    <div class="col-xs-5">
 
-        
-        
+    <div class="col-xs-5 visible-md visible-lg">
+      <h3 style="margin-top:5px;">Did you know?</h3>
+      <p>Waste management companies make $350 million a year selling back waste and recycling refuge from commercial businesses. And they only give back $1.7 million to those same customers...</p> 
+
     </div>
 
 </div>
 
-<!--
+
+  <!--
+    <div class="row">
+
+      <div style="background-color:white;"class="screeninfo col-xs-12">
+
+        <h3 class="visible-xs">Extra Small Screens</h3>
+        <h2 class="visible-sm">Small Screens</h2>
+        <h2 class="visible-md">Medium Screens</h2>
+        <h1 class="visible-lg">Large Screens</h1>
+
+      </div>
+
+    </div>
+
+    <div style="margin-top:15px" class="row">
+
+      <div class="col-sm-6">
+
+          <div class="row">
+
+            <div class="col-xs-4">
+            
+            </div>
+
+            <div style="margin-top:10px;" class="col-xs-8 visible-lg visible-md">  
+              <p>Suspendisse iaculis sagittis lorem quis tincidunt. Integer et nibh eros. Mauris non neque ac mi euismod hendrerit.</p>
+            </div>
+
+            <div style="margin-top:20px;" class="col-xs-8 visible-xs visible-sm">     
+              <p>Suspendisse iaculis sagittis lorem quis tincidunt.</p>
+            </div>
+
+          </div>    
+      </div>
+
+      <div class="col-sm-6">
+
+          <div class="row">
+
+            <div style="margin-bottom:10px;" class="col-xs-4 col-md-push-8">
+            
+            </div>
+            <div style="margin-top:9px;" class="col-xs-8 col-md-pull-4 visible-md visible-lg">     
+                <p>Suspendisse iaculis sagittis lorem quis tincidunt. Integer et nibh eros. Mauris non neque ac mi euismod hendrerit.</p>
+            </div>
+
+            <div style="margin-top:9px;" class="col-xs-8 col-md-pull-4 visible-xs visible-sm">     
+              <p>Suspendisse iaculis sagittis lorem quis tincidunt.</p>
+            </div>
+
+          </div>    
+      </div>
+
+    </div>
+
+
+  <div class="row footer">
+
+    <div class="col-sm-4">
+      col-sm-4
+    </div>
+
+    <div class="col-sm-4">
+      col-sm-4
+    </div>
+
+    <div class="col-sm-4">
+      col-sm-4
+    </div>
+
+
+  </div>
+
   <div class="row">
 
-    <div style="background-color:white;"class="screeninfo col-xs-12">
-
-      <h3 class="visible-xs">Extra Small Screens</h3>
-      <h2 class="visible-sm">Small Screens</h2>
-      <h2 class="visible-md">Medium Screens</h2>
-      <h1 class="visible-lg">Large Screens</h1>
-
+    <div class="col-md-4 col-md-offset-4 panel">
+      This div is offset 4
     </div>
 
   </div>
 
-  <div style="margin-top:15px" class="row">
-
-    <div class="col-sm-6">
-
-        <div class="row">
-
-          <div class="col-xs-4">
-          
-          </div>
-
-          <div style="margin-top:10px;" class="col-xs-8 visible-lg visible-md">  
-            <p>Suspendisse iaculis sagittis lorem quis tincidunt. Integer et nibh eros. Mauris non neque ac mi euismod hendrerit.</p>
-          </div>
-
-          <div style="margin-top:20px;" class="col-xs-8 visible-xs visible-sm">     
-            <p>Suspendisse iaculis sagittis lorem quis tincidunt.</p>
-          </div>
-
-        </div>    
-    </div>
-
-    <div class="col-sm-6">
-
-        <div class="row">
-
-          <div style="margin-bottom:10px;" class="col-xs-4 col-md-push-8">
-          
-          </div>
-          <div style="margin-top:9px;" class="col-xs-8 col-md-pull-4 visible-md visible-lg">     
-              <p>Suspendisse iaculis sagittis lorem quis tincidunt. Integer et nibh eros. Mauris non neque ac mi euismod hendrerit.</p>
-          </div>
-
-          <div style="margin-top:9px;" class="col-xs-8 col-md-pull-4 visible-xs visible-sm">     
-            <p>Suspendisse iaculis sagittis lorem quis tincidunt.</p>
-          </div>
-
-        </div>    
-    </div>
-
-  </div>
-
-
-<div class="row footer">
-
-  <div class="col-sm-4">
-    col-sm-4
-  </div>
-
-  <div class="col-sm-4">
-    col-sm-4
-  </div>
-
-  <div class="col-sm-4">
-    col-sm-4
-  </div>
-
-
-</div>
-
-<div class="row">
-
-  <div class="col-md-4 col-md-offset-4 panel">
-    This div is offset 4
-  </div>
-
-</div>
-
--->
+  -->
 
 
