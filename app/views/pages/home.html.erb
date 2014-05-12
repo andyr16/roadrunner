@@ -11,6 +11,8 @@ body{
     -webkit-border-radius: 8px;
        -moz-border-radius: 8px;
             border-radius: 8px;
+            margin-bottom:10px;
+            margin-right: 10px;
     }
 
   .col-xs-6{
@@ -189,11 +191,11 @@ body{
 
           <% else %>
 
-          <%= link_to "Log in", new_user_session_path, class: "btn btn-primary btn-xlarge" %><br>
+          <%= link_to "Log In", new_user_session_path, class: "btn btn-primary btn-xlarge" %><br>
 
           <%= link_to "Learn More", "#", class: "btn btn-primary btn-xlarge" %>
 
-          <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-xlarge" %><br>
+          <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-xlarge" %><br>
           <% end %>
 
         </div>
