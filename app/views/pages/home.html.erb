@@ -92,6 +92,11 @@ body{
 
     }
 
+    #rrslider {
+        height:300px;
+        padding-top: 25px;
+    }
+
 
 </style>
 
@@ -116,7 +121,7 @@ body{
     <div id="homeheroxs" class="col-xs-12 visible-xs">
 
       <h1 style="font-size:x-large;">Revolutionizing Recycling</h1>
-      <h3 style="font-size:large;">One Building at a Time</h3><br>
+      <h3 style="font-size:large;">One Building At a Time</h3><br>
 
         <div class="loginstuff">
 
@@ -126,9 +131,9 @@ body{
 
           <% else %>
 
-          <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %><br><br>
+          <%= link_to "Log in", new_user_session_path, class: "btn btn-primary btn-lg" %><br><br>
 
-          <%= link_to "Learn More", "#", class: "btn btn-default btn-lg" %>
+          <%= link_to "Learn More", "#", class: "btn btn-primary btn-lg" %>
 
           <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %><br>
           <% end %>
@@ -140,7 +145,7 @@ body{
     <div id="homeherosm" class="col-xs-12 visible-sm">
 
       <h1 style="font-size:x-large;">Revolutionizing Recycling</h1>
-      <h3 style="font-size:large;">One Building at a Time</h3><br>
+      <h3 style="font-size:large;">One Building At a Time</h3><br>
 
         <div class="loginstuff">
 
@@ -150,9 +155,9 @@ body{
 
           <% else %>
 
-          <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %><br><br>
+          <%= link_to "Log in", new_user_session_path, class: "btn btn-primary btn-lg" %><br><br>
 
-          <%= link_to "Learn More", "#", class: "btn btn-default btn-lg" %>
+          <%= link_to "Learn More", "#", class: "btn btn-primary btn-lg" %>
 
           <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %><br>
           <% end %>
@@ -164,7 +169,7 @@ body{
     <div id="homeheromdlg" class="col-md-12 visible-lg visible-md">
 
       <h1 style="font-size:2em">Revolutionizing Recycling</h1>
-      <h3 style="font-size:1.2em">One Building at a Time</h3><br>
+      <h3 style="font-size:1.2em">One Building At a Time</h3><br>
 
         <div class="loginstuff">
 
@@ -174,9 +179,9 @@ body{
 
           <% else %>
 
-          <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %><br><br>
+          <%= link_to "Log in", new_user_session_path, class: "btn btn-primary btn-lg" %><br>
 
-          <%= link_to "Learn More", "#", class: "btn btn-default btn-lg" %>
+          <%= link_to "Learn More", "#", class: "btn btn-primary btn-lg" %>
 
           <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %><br>
           <% end %>
@@ -199,7 +204,7 @@ body{
         <p><span style="color:#489141;" class="glyphicon glyphicon-circle-arrow-right"></span>  View RR Services</p>
       </div>
 
-    </div>
+    </div> <!-- ends col-xs-7 div -->
 
 
     <div style="padding-left:20px;" class="col-xs-5">
@@ -207,6 +212,42 @@ body{
       <h2 class="visible-sm">Small Screens</h2>
       <h2 class="visible-md">Medium Screens</h2>
       <h1 class="visible-lg">Large Screens</h1>
+    </div>
+
+
+    <div id="rrslider" class="col-xs-12">
+
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="..." alt="...">
+          <div class="carousel-caption">
+            ...
+          </div>
+        </div>
+        ...
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+
+
+
+
     </div>
 
 
