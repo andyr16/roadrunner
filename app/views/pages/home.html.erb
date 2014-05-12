@@ -48,16 +48,10 @@ body{
     .col-xs-12 {
     height: 250px;
     background-image: url(<%= asset_path 'ny-city-sm-xs.jpg' %>);
-    background-size: cover;
+    background-size: 100% 100%;
     color: white;
-    text-align: center;
-    font-size: .6em;
+    text-align:center;
     }
-
-  .quicklinks {
-
-    margin-top: 8px;
-  }
   
   .col-lg-12 {
     height: 500px;
@@ -68,7 +62,10 @@ body{
     font-size: 300%;
     }
 
-  }
+    .nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
 
 </style>
 
@@ -83,6 +80,11 @@ body{
         .hidden-##: your content will only be hidden on that screen size
       -->
 
+  <!-- <h3 class="visible-xs">Extra Small Screens</h3>
+      <h2 class="visible-sm">Small Screens</h2>
+      <h2 class="visible-md">Medium Screens</h2>
+      <h1 class="visible-lg">Large Screens</h1>
+    -->
 
    <div class="row">
 
@@ -91,16 +93,20 @@ body{
       <h1 style="font-size:x-large;">Revolutionizing Recycling</h1>
       <h3 style="font-size:large;">One Building at a Time</h3>
 
-        <% if user_signed_in? %>
+        <div class="loginstuff">
 
-          # do something
+          <% if user_signed_in? %>
 
-        <% else %>
+            # do something
 
-        <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-sm" %><br><br>
+          <% else %>
 
-        <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-sm" %><br>
-        <% end %>
+          <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-md" %><br><br>
+
+          <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-md" %><br>
+          <% end %>
+
+        </div>
 
      <!-- <h3 class="visible-xs">Extra Small Screens</h3>
       <h2 class="visible-sm">Small Screens</h2>
@@ -129,46 +135,15 @@ body{
 
     <div class="col-xs-5">
 
-        <% if user_signed_in? %>
-          # do something
-        <% else %>
-
-           <p class="visible-xs"style="text-align:center;padding-top:40px;">
-            Already a member?<br>
-
-             <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-sm" %><br>
-            New to the site?<br>
-
-             <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-sm" %>
-           </p>
-
-           <p class="visible-sm"style="text-align:center;padding-top:50px;">
-            <br>
-
-             <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-md" %><br>
-
-             <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-sm" %>
-
-           </p>
-
-           <p class="visible-lg visible-md"style="text-align:center;padding-top:50px;">
-
-             <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %><br><br>
-
-             <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-
-           </p>
-
-          <% end %>
+        
         
     </div>
 
-  </div>
 </div>
 
   <div class="row">
 
-    <div style="margin-top:15px;" class="col-xs-12">
+    <div class="col-xs-12">
 
       <div class="quicklinks">
         <p><span style="color:#FFC443;"class="glyphicon glyphicon-circle-arrow-right"></span> Visit the RR Learning Center</p>
@@ -252,4 +227,5 @@ body{
   </div>
 
 </div>
+
 
