@@ -132,20 +132,29 @@ body{
       background-image: url(<%= asset_path 'recycled-bottles.jpg' %>);
       background-size: cover;
       border: 1px solid #C9C9C9;
-      color: white;
+      color: #FFEB54;
       text-align: center;
+      height: auto;
+      padding-bottom:10px;
+      padding-top: 10px;
     } 
 
      #middleclm {
       color: white;
       text-align: center;
       background-color: white;
+      padding-top:15px;
     } 
 
     #colm3 {
       background-image: url(<%= asset_path 'blue-background.jpg' %>);
       text-align: center;
       color: #C4C4C4;
+
+    }
+
+    #inforow {
+      background-color: ;
 
     }
 
@@ -276,14 +285,14 @@ body{
       <p class="visible-lg" style="font-size:300%;padding-left:10px;padding-right:10px;"><strong>ROADRUNNER SAVES BUSINESSES UP TO 30% ON RECYCLING COSTS</strong></p>
       <p class="visible-md" style="font-size:220%;padding-left:10px;padding-right:10px;padding-top:10px;padding-bottom:5px;"><strong>ROADRUNNER SAVES BUSINESSES UP TO 30% ON RECYCLING COSTS</strong></p>
       <p class="visible-sm" style="font-size:210%;padding-left:10px;padding-right:10px;padding-top:20px;padding-bottom:5px;"><strong>ROADRUNNER SAVES BUSINESSES UP TO 30% ON RECYCLING COSTS</strong></p>
-      <p class="visible-xs" style="font-size:200%;padding-left:10px;padding-right:10px;padding-top:20px;padding-bottom:5px;"><strong>ROADRUNNER SAVES BUSINESSES UP TO 30% ON RECYCLING COSTS</strong></p>
+      <p class="visible-xs" style="font-size:200%;padding-left:10px;padding-right:10px;"><strong>ROADRUNNER SAVES BUSINESSES UP TO 30% ON RECYCLING COSTS</strong></p>
      
      
      <p style="text-align:center;"> <%= link_to "See How", about_path, class: "btn btn-default btn-lg" %>
     </div>
 
     <div id="middleclm" class="col-sm-4">
-      <%= image_tag ('recycling-green.jpg'), height: '250' %>
+      <%= image_tag ('recycling-green.jpg'), height: '300' %>
     </div>
 
     <div style="font-size:375%;" id="colm3" class="col-sm-4">
