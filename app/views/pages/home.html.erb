@@ -37,7 +37,7 @@ body{
 
   .col-sm-4 {
     color: black;
-    height: 125px;
+    height: auto;
     margin-top:15px;
 
   }
@@ -62,8 +62,6 @@ body{
   }
 
     .footer .col-sm-4{
-    background-color:#FFECA0;
-    color: black;
     height: 320px;
     margin-top:15px;
   }
@@ -141,9 +139,15 @@ body{
      #middleclm {
       color: white;
       text-align: center;
-      padding-top: 10px;
       background-color: white;
     } 
+
+    #colm3 {
+      background-image: url(<%= asset_path 'blue-background.jpg' %>);
+      text-align: center;
+      color: #C4C4C4;
+
+    }
 
 
 </style>
@@ -269,8 +273,10 @@ body{
     <div class="row footer">
 
     <div id="whatis" class="col-sm-4">
-      <p class="visible-lg visible-md" style="font-size:300%;padding-left:10px;padding-right:10px;"><strong>ROADRUNNER SAVES BUSINESSES UP TO 30% ON RECYCLING COSTS</strong></p>
-      <p class="visible-xs visible-sm" style="font-size:230%;padding-left:10px;padding-right:10px;padding-top:20px;padding-bottom:5px;"><strong>ROADRUNNER SAVES BUSINESSES UP TO 30% ON RECYCLING COSTS</strong></p>
+      <p class="visible-lg" style="font-size:300%;padding-left:10px;padding-right:10px;"><strong>ROADRUNNER SAVES BUSINESSES UP TO 30% ON RECYCLING COSTS</strong></p>
+      <p class="visible-md" style="font-size:220%;padding-left:10px;padding-right:10px;padding-top:10px;padding-bottom:5px;"><strong>ROADRUNNER SAVES BUSINESSES UP TO 30% ON RECYCLING COSTS</strong></p>
+      <p class="visible-sm" style="font-size:210%;padding-left:10px;padding-right:10px;padding-top:20px;padding-bottom:5px;"><strong>ROADRUNNER SAVES BUSINESSES UP TO 30% ON RECYCLING COSTS</strong></p>
+      <p class="visible-xs" style="font-size:200%;padding-left:10px;padding-right:10px;padding-top:20px;padding-bottom:5px;"><strong>ROADRUNNER SAVES BUSINESSES UP TO 30% ON RECYCLING COSTS</strong></p>
      
      
      <p style="text-align:center;"> <%= link_to "See How", about_path, class: "btn btn-default btn-lg" %>
@@ -280,8 +286,16 @@ body{
       <%= image_tag ('recycling-green.jpg'), height: '250' %>
     </div>
 
-    <div class="col-sm-4">
-      col-sm-4
+    <div style="font-size:375%;" id="colm3" class="col-sm-4">
+      <p>THE FACTS  <span style="color:red;padding-top:20px;"class="glyphicon glyphicon-trash"></span>
+      </p>
+
+      <ul style="color:white;font-size:50%">
+          <li>lorem ipsum n' at</li>
+          <li>lorem ipsum n' at</li>
+          <li>lorem ipsum n' at</li>
+          <li>lorem ipsum n' at</li>
+          <li>lorem ipsum n' at</li>
     </div>
 
 
