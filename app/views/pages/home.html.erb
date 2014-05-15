@@ -20,6 +20,7 @@ body{
             margin-right: 10px;
     }
 
+
   .col-xs-6{
     background-color:#FFECA0;
     border: 2px solid black;
@@ -31,6 +32,13 @@ body{
     background-size: 100% 100%;
     color: white;
     height: 125px;
+
+  }
+
+  .col-sm-4 {
+    color: black;
+    height: 125px;
+    margin-top:15px;
 
   }
 
@@ -55,9 +63,9 @@ body{
 
     .footer .col-sm-4{
     background-color:#FFECA0;
-    border: 1px solid black;
     color: black;
     height: 320px;
+    margin-top:15px;
   }
 
     .col-xs-12 {
@@ -121,6 +129,22 @@ body{
         padding-left: 10px;
 
     }
+
+    #whatis {
+      background-image: url(<%= asset_path 'recycled-bottles.jpg' %>);
+      background-size: cover;
+      border: 1px solid #C9C9C9;
+      color: white;
+      margin-left:5px;
+      text-align: center;
+    } 
+
+     #middleclm {
+      color: white;
+      text-align: center;
+      padding-top: 10px;
+      background-color: white;
+    } 
 
 
 </style>
@@ -245,15 +269,14 @@ body{
 
     <div class="row footer">
 
-    <div style="padding-left:10px;padding-right:10px;" class="col-sm-4">
-      <h3>What is RoadRunner?</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet magna ac sapien faucibus, a egestas sem hendrerit. Praesent vestibulum, ante non fringilla sollicitudin, metus ligula ultrices neque, semper pretium diam augue porta dolor. Curabitur a orci ultricies nisl ultricies hendrerit pretium eu eros.</p><br>
-
-     <p style="text-align:center;"> <%= link_to "Learn More", "#", class: "btn btn-default btn-lg" %>
+    <div id="whatis" style="padding-left:10px;padding-right:10px;font-size:300%;" class="col-sm-4">
+      <strong>ROADRUNNER SAVES BUSINESSES UP TO 30% ON RECYCLING COSTS</strong>
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet magna ac sapien faucibus, a egestas sem hendrerit. Praesent vestibulum, ante non fringilla sollicitudin, metus ligula ultrices neque, semper pretium diam augue porta dolor. Curabitur a orci ultricies nisl ultricies hendrerit pretium eu eros.</p><br> -->
+     <p style="text-align:center;"> <%= link_to "See How", about_path, class: "btn btn-default btn-lg" %>
     </div>
 
-    <div class="col-sm-4">
-      col-sm-4
+    <div id="middleclm" class="col-sm-4">
+      <%= image_tag ('recycling-green.jpg'), height: '250' %>
     </div>
 
     <div class="col-sm-4">
