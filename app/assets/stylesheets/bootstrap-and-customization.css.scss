@@ -1,11 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
 
-$body-bg:						#ecf0f1;
+$body-bg:						white;
 $font-family-sans-serif:		'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-height:					40px;
 $navbar-default-bg:				white;
-$brand-primary:					#1C468B;
+$brand-primary:					#30415D;
 $jumbotron-bg:					white;
 $navbar-default-brand-color:	#30415D;
 $navbar-margin-bottom:			0px;
@@ -15,6 +15,9 @@ $btn-default-border:			#AFAFAF;
 $btn-primary-bg:				#304361;
 $btn-default-color:				white;
 $navbar-default-link-color: 	#30415D;
+$dropdown-bg:					#304361;;
+$dropdown-link-color:			white;
+$thumbnail-bg:					#ecf0f1;
 
 		
 
@@ -27,5 +30,7 @@ $navbar-default-link-color: 	#30415D;
 .navbar-brand {
 	font-weight:bold;
 }
+
+
 
 

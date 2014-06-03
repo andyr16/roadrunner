@@ -1,6 +1,6 @@
 <style>
 
-body{
+body {
   background-color: white;
 }
 
@@ -19,13 +19,6 @@ body{
             margin-bottom:10px;
             margin-right: 10px;
     }
-
-
-  .col-xs-6{
-    background-color:#FFECA0;
-    border: 2px solid black;
-    color: black;
-  }
 
   .col-xs-4{
     background-image: url(<%= asset_path 'rec-bins.jpg' %>);
@@ -158,6 +151,18 @@ body{
 
     }
 
+    #grayrow {
+
+      height: 350px;
+      background-color: #DDDDDD;
+      margin-top:15px;
+      padding-left: 15px;
+      padding-top:10px;
+      color:#5E5E5E;
+      text-align: center;
+      margin-top:-10px;
+    }
+
 
 </style>
 
@@ -277,6 +282,19 @@ body{
 
     </div> 
 
+  </div> <!-- closes row div -->
+
+  <div class="row">
+
+    <div id="grayrow" class="col-xs-12">
+
+      <h1>
+        Start Here
+      </h1>
+
+
+    </div>
+
   </div>
 
     <div class="row footer">
@@ -309,6 +327,59 @@ body{
 
 
   </div>
+
+  <div class="row visible-xs">
+
+    <div id ="grayrow" class="col-sm-4">
+     <h2> How Does RoadRunner Work?</h2>
+
+    </div>
+
+    <div id ="grayrow" class="col-sm-4">
+       <h2> How Does RoadRunner Work?</h2>
+    </div>
+
+    <div id ="grayrow" class="col-sm-4">
+       <h2> How Does RoadRunner Work?</h2>
+    </div>
+
+  </div> <!-- ends row container -->
+
+  <div class="row">
+      <div class="col-sm-4 col-md-4">
+        <div class="thumbnail">
+          <%= image_tag('efficiency-ahead.jpg') %>
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>...</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-sm-4 col-md-4">
+        <div class="thumbnail">
+          <%= image_tag('efficiency-ahead.jpg') %>
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>...</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-sm-4 col-md-4">
+        <div class="thumbnail">
+          <%= image_tag('efficiency-ahead.jpg') %>
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>...</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+
+  </div> <!-- ends row container -->
 
 
 
